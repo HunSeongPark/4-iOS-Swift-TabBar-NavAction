@@ -13,27 +13,21 @@ class MainTabBarController : UITabBarController {
     super.viewDidLoad()
     
     //set each tab view
-    let firstNC = UINavigationController.init(rootViewController: MyViewController(title: "첫번째", bgColor: .orange))
-    let secondNC = UINavigationController.init(rootViewController: MyViewController(title: "두번째", bgColor: .blue))
-    let thirdNC = UINavigationController.init(rootViewController: MyViewController(title: "세번째", bgColor: .red))
-    let forthNC = UINavigationController.init(rootViewController: MyViewController(title: "네번째", bgColor: .systemPink))
-    let fifthNC = UINavigationController.init(rootViewController: MyViewController(title: "다섯번째", bgColor: .green))
+    let firstNC = UINavigationController.init(rootViewController: MyViewController(title: "홈", bgColor: .orange))
+    let secondNC = UINavigationController.init(rootViewController: MyViewController(title: "카테고리", bgColor: .blue))
+    let thirdNC = UINavigationController.init(rootViewController: MyViewController(title: "검색", bgColor: .red))
     
     //set tab bar controller views
-    self.viewControllers = [firstNC, secondNC, thirdNC, forthNC, fifthNC]
+    self.viewControllers = [firstNC, secondNC, thirdNC]
     
     //set tab bar item
-    let firstTabBarItem = UITabBarItem(title: "첫번째" , image:UIImage(systemName: "airplayaudio"),tag: 0)
-    let secondTabBarItem = UITabBarItem(title: "두번째" , image:UIImage(systemName: "airplayaudio"),tag: 1)
-    let thirdTabBarItem = UITabBarItem(title: "세번째" , image:UIImage(systemName: "arrow.clockwise.icloud.fill"),tag: 2)
-    let forthTabBarItem = UITabBarItem(title: "네번째" , image:UIImage(systemName: "arrow.down.left.video.fill"),tag: 3)
-    let fifthTabBarItem = UITabBarItem(title: "다섯번째" , image:UIImage(systemName: "safari.fill"),tag: 4)
+    let firstTabBarItem = UITabBarItem(title: "홈" , image:UIImage(systemName: "homekit"),tag: 0)
+    let secondTabBarItem = UITabBarItem(title: "카테고리" , image:UIImage(systemName: "airport.express"),tag: 1)
+    let thirdTabBarItem = UITabBarItem(title: "검색" , image:UIImage(systemName: "airplayvideo"),tag: 2)
     
     //connection tab bar item - tab view
     firstNC.tabBarItem = firstTabBarItem
     secondNC.tabBarItem = secondTabBarItem
     thirdNC.tabBarItem = thirdTabBarItem
-    forthNC.tabBarItem = forthTabBarItem
-    fifthNC.tabBarItem = fifthTabBarItem
   }
 }

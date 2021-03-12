@@ -14,6 +14,8 @@
 		97BE99A825FB5DAC00ACEF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BE99A725FB5DAC00ACEF87 /* Assets.xcassets */; };
 		97BE99AB25FB5DAC00ACEF87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BE99A925FB5DAC00ACEF87 /* LaunchScreen.storyboard */; };
 		97BE99B525FB5E4900ACEF87 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE99B425FB5E4900ACEF87 /* MainTabBarController.swift */; };
+		97BE99BA25FB6C1100ACEF87 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE99B925FB6C1100ACEF87 /* MessageViewController.swift */; };
+		97BE99BD25FB6C4900ACEF87 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE99BC25FB6C4900ACEF87 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		97BE99AA25FB5DAC00ACEF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97BE99AC25FB5DAC00ACEF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97BE99B425FB5E4900ACEF87 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		97BE99B925FB6C1100ACEF87 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		97BE99BC25FB6C4900ACEF87 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				97BE99AC25FB5DAC00ACEF87 /* Info.plist */,
 				97BE99A425FB5DAB00ACEF87 /* TabBarController_NoStoryBoard.xcdatamodeld */,
 				97BE99B425FB5E4900ACEF87 /* MainTabBarController.swift */,
+				97BE99B925FB6C1100ACEF87 /* MessageViewController.swift */,
+				97BE99BC25FB6C4900ACEF87 /* ProfileViewController.swift */,
 			);
 			path = TabBarController_NoStoryBoard;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 				97BE999C25FB5DAB00ACEF87 /* AppDelegate.swift in Sources */,
 				97BE99B525FB5E4900ACEF87 /* MainTabBarController.swift in Sources */,
 				97BE999E25FB5DAB00ACEF87 /* SceneDelegate.swift in Sources */,
+				97BE99BD25FB6C4900ACEF87 /* ProfileViewController.swift in Sources */,
+				97BE99BA25FB6C1100ACEF87 /* MessageViewController.swift in Sources */,
 				97BE99A625FB5DAB00ACEF87 /* TabBarController_NoStoryBoard.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
