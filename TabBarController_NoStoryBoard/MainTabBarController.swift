@@ -12,22 +12,24 @@ class MainTabBarController : UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    print("MainTabBarController - viewDidLoad() called")
-    
+    //set each tab view
     let firstNC = UINavigationController.init(rootViewController: MyViewController(title: "첫번째", bgColor: .orange))
     let secondNC = UINavigationController.init(rootViewController: MyViewController(title: "두번째", bgColor: .blue))
     let thirdNC = UINavigationController.init(rootViewController: MyViewController(title: "세번째", bgColor: .red))
     let forthNC = UINavigationController.init(rootViewController: MyViewController(title: "네번째", bgColor: .systemPink))
     let fifthNC = UINavigationController.init(rootViewController: MyViewController(title: "다섯번째", bgColor: .green))
     
+    //set tab bar controller views
     self.viewControllers = [firstNC, secondNC, thirdNC, forthNC, fifthNC]
     
+    //set tab bar item
     let firstTabBarItem = UITabBarItem(title: "첫번째" , image:UIImage(systemName: "airplayaudio"),tag: 0)
     let secondTabBarItem = UITabBarItem(title: "두번째" , image:UIImage(systemName: "airplayaudio"),tag: 1)
     let thirdTabBarItem = UITabBarItem(title: "세번째" , image:UIImage(systemName: "arrow.clockwise.icloud.fill"),tag: 2)
     let forthTabBarItem = UITabBarItem(title: "네번째" , image:UIImage(systemName: "arrow.down.left.video.fill"),tag: 3)
     let fifthTabBarItem = UITabBarItem(title: "다섯번째" , image:UIImage(systemName: "safari.fill"),tag: 4)
     
+    //connection tab bar item - tab view
     firstNC.tabBarItem = firstTabBarItem
     secondNC.tabBarItem = secondTabBarItem
     thirdNC.tabBarItem = thirdTabBarItem

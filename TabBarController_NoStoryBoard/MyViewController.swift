@@ -9,6 +9,7 @@ import UIKit
 
 class MyViewController: UIViewController {
 
+  //set each view
   convenience init(title: String, bgColor: UIColor) {
     self.init()
     self.title = title
